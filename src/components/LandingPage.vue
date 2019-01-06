@@ -7,13 +7,16 @@
       <v-spacer></v-spacer>
     </v-toolbar>
     <v-content>
-           <h1>{{title}}</h1>
-        <h2>{{subHeading}}</h2>
-        <v-img :src="productImage"></v-img>
+      <h1>{{title}}</h1>
+      <h2>{{subHeading}}</h2>
+
       <v-container fluid fill-height>
         <v-layout justify-center align-center>
           <v-flex text-xs-center>
-            Here is the Centre
+            <v-img :src="productImg" aspect-ratio="2" :contain="imageContain"></v-img>
+          </v-flex>
+          <v-flex>
+             <Checkout></Checkout>
           </v-flex>
         </v-layout>
       </v-container>
@@ -25,8 +28,13 @@
 </template>
 
 <script>
+import Checkout from "../components/Checkout.vue";
+
 export default {
   name: "LandingPage",
+  components: {
+    Checkout
+  },
   props: {
     source: String,
     msg: String
@@ -34,22 +42,21 @@ export default {
   data: () => ({
     drawer: null,
     currentYear: null,
-    title: null,
-    subHeading: null,
-    productImg: "https://misbahshah.com/franquias/2/371212/editor-html/2402853.png",
-    
+    title: "Product Title",
+    subHeading: "Sub-Heading",
+    productImg:
+      "https://misbahshah.com/franquias/2/371212/editor-html/2402853.png",
+    imageContain: true
   }),
   methods: {
     getCurrentYear() {
-      this.currentYear = new Date().getFullYear()
+      this.currentYear = new Date().getFullYear();
     }
   },
   created() {
-     this.getCurrentYear()
+    this.getCurrentYear();
   },
-  computed: {
-
-  }
+  computed: {}
 };
 </script>
 
