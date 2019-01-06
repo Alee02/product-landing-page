@@ -3,13 +3,12 @@
     <v-toolbar color="primary" dark fixed app>
       <!-- <v-toolbar-side-icon v-on:click.stop="drawer = !drawer"></v-toolbar-side-icon> -->
       <v-spacer></v-spacer>
-      <v-toolbar-title>Misbah Shah</v-toolbar-title>
+      <v-toolbar-title>{{navTitle}}</v-toolbar-title>
       <v-spacer></v-spacer>
     </v-toolbar>
     <v-content>
       <h1>{{title}}</h1>
       <h2>{{subHeading}}</h2>
-
       <v-container fluid fill-height>
         <v-layout justify-center align-center>
           <v-flex text-xs-center>
@@ -40,12 +39,11 @@ export default {
     msg: String
   },
   data: () => ({
-    drawer: null,
+    navTitle: "London Publish Press Ltd",
     currentYear: null,
-    title: "Product Title",
-    subHeading: "Sub-Heading",
-    productImg:
-      "https://misbahshah.com/franquias/2/371212/editor-html/2402853.png",
+    title: "Lazzat-e-Ghum",
+    subHeading: "By Misbah Shah",
+    productImg:  "https://misbahshah.com/franquias/2/371212/editor-html/2402853.png",
     imageContain: true
   }),
   methods: {

@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "vue": "^2.5.21",
+    "vue-stripe-checkout": "^1.2.3",
     "vuetify": "^1.4.0"
   },
   "devDependencies": {
