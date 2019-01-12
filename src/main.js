@@ -5,9 +5,8 @@ import 'vuetify/dist/vuetify.min.css'
 import colors from 'vuetify/es5/util/colors'
 import VueStripeCheckout from 'vue-stripe-checkout';
 
-Vue.config.productionTip = false
+// Vue.config.productionTip = false
 
- 
 Vue.use(VueStripeCheckout, 'pk_live_NabI87Fil8TmdEMDXvVdnDy6');
 
 Vue.use(Vuetify, {
