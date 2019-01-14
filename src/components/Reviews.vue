@@ -15,7 +15,6 @@
         </h4>
         <p>Prof A. K. Hayat</p>
       </v-flex>
-    
   </div>
 </template>
 
