@@ -11,16 +11,27 @@
       <h2>{{subHeading}}</h2>
     <v-content>
       <v-container fluid fill-height>
-        <v-layout align-center justify-center column fill-height>
+        <v-layout align-center justify-center row fill-height>
           <v-flex text-xs-center>
             <v-img :src="productImg" aspect-ratio="2" :contain="imageContain"></v-img>
           </v-flex>
           <v-flex>
              <Checkout></Checkout>
           </v-flex>
-             <v-flex>
-             <Reviews></Reviews>
-          </v-flex>
+          <!-- <v-layout align-center justify-center row> -->
+            <v-flex>
+             <Reviews>
+                <h4>Is Jahan mein koi ahle dil baat jab keh na sake, To woh Misbah Shah ki shairy ka sahar le</h4>
+                <p>By Ali Irfan Shah (Novelist, Phd Psychologist and Masters in Urdu Language) (Probably should translate)</p>
+             </Reviews>
+            </v-flex>
+            <v-flex>
+             <Reviews>
+                  <h4>Could write anything. Parveen shakir of our times</h4>
+                   <p>Dr P. Zafar (M.B.B.S RMP Gynacologist)</p>
+             </Reviews>
+            </v-flex>
+          <!-- </v-layout> -->
           <v-flex>
             <!-- <GeneralInfo
             infoTitle="Privacy Policy"
@@ -46,7 +57,7 @@ export default {
   name: "LandingPage",
   components: {
     Checkout,
-    Reviews,
+    Reviews, 
     GeneralInfo,
     Product
   },
