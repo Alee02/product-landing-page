@@ -43,6 +43,7 @@
     </v-content>
     <v-footer color="primary" app>
       <span class="white--text">&copy; {{currentYear}}</span>
+
     </v-footer>
   </v-app>
 </template>
@@ -70,7 +71,7 @@ export default {
     currentYear: null,
     title: "Lazzat-e-Ghum",
     subHeading: "By Misbah Shah",
-    productImg:  "https://misbahshah.com/franquias/2/371212/editor-html/2402853.png",
+    productImg:  "https://github.com/Alee02/product-landing-page/blob/master/src/assets/book_main.png",
     imageContain: true
   }),
   methods: {
