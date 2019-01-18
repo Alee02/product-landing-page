@@ -10,10 +10,10 @@
     <h1>{{title}}</h1>
       <h2>{{subHeading}}</h2>
     <v-content>
-      <v-container fluid fill-height>
-        <v-layout align-center justify-center row fill-height>
-          <v-flex text-xs-center>
-            <v-img :src="productImg" aspect-ratio="2" :contain="imageContain"></v-img>
+      <v-container>
+        <v-layout>
+          <v-flex>
+            <v-img :src="productImg" aspect-ratio="1" :contain="imageContain"></v-img>
           </v-flex>
           <v-flex>
              <Checkout></Checkout>
@@ -56,12 +56,6 @@ import Product from "../components/Product.vue";
 
 export default {
   name: "LandingPage",
-  components: {
-    Checkout,
-    Reviews, 
-    GeneralInfo,
-    Product
-  },
   props: {
     source: String,
     msg: String
@@ -71,7 +65,7 @@ export default {
     currentYear: null,
     title: "Lazzat-e-Ghum",
     subHeading: "By Misbah Shah",
-    productImg:  "https://github.com/Alee02/product-landing-page/blob/master/src/assets/book_main.png",
+    productImg:  "https://github.com/Alee02/product-landing-page/blob/master/src/assets/book_main.png?raw=true",
     imageContain: true
   }),
   methods: {
