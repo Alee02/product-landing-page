@@ -13,6 +13,7 @@
       <h2>{{subHeading}}</h2>
     <v-content color="grey">
       <v-container fluid>
+        <v-layout align-start justify-space-between column/>
         <v-layout wrap fill-height>
            <v-flex text-lg-left>
             <v-img :src="productImg" aspect-ratio="1.5" :contain="imageContain"></v-img>
@@ -32,28 +33,59 @@
             ></GeneralInfo> -->
           <!-- </v-flex> -->
           </v-layout>
+          </v-layout>
+          <v-layout>
+            <v-flex>
+              <Reviews>
+                <h4>Is Jahan mein koi ahle dil baat jab keh na sake, To woh Misbah Shah ki shairy ka sahar le</h4>
+                <p>By Ali Irfan Shah (Novelist, Phd Psychologist and Masters in Urdu Language) (Probably should translate)</p>
+             </Reviews>
+            </v-flex>
+            <v-flex>
+             <Reviews>
+                  <h4>Could write anything. Parveen shakir of our times</h4>
+                   <p>Dr P. Zafar (M.B.B.S RMP Gynacologist)</p>
+             </Reviews>
+            </v-flex>
+          </v-layout>
       </v-container>
     </v-content>
-    <v-footer color="primary" app>
-    <span class="white--text">&copy; {{currentYear }}</span><span class="white--text"> - </span><strong class="white--text"> London Publishing Press Ltd</strong>
+    <v-footer color="primary" height="auto" app>
+  
+      <v-layout
+      justify-center
+      row
+      wrap
+    >
       <v-btn
+      class="white--text"
         flat
-        class="white--text"
       >
-      Privacy Policy
-      </v-btn>
-       <v-btn
-        flat
-        class="white--text"
-      >
-      Disclaimer
+        Privacy Policty
       </v-btn>
       <v-btn
+      class="white--text"
         flat
-        class="white--text"
       >
-      Terms & Conditions
+        Disclaimer
       </v-btn>
+      <v-btn
+      class="white--text"
+        flat
+      >
+        Terms & Condition
+      </v-btn>
+      <v-flex
+        primary
+        lighten-2
+        py-3
+        text-xs-center
+        white--text
+        xs12
+      >
+        <span class="white--text">&copy; {{currentYear }}</span><span class="white--text"> - </span><strong class="white--text"> London Publishing Press Ltd</strong>
+      </v-flex>
+    </v-layout>
     </v-footer>
   </v-app>
 </template>
