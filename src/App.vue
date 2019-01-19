@@ -11,15 +11,19 @@
     <br>
     <h1>{{title}}</h1>
       <h2>{{subHeading}}</h2>
-    <v-content>
-      <v-container>
-        <v-layout justify-center row>
-          <v-flex>
-            <v-img :src="productImg" :contain="imageContain"></v-img>
+    <v-content color="grey">
+      <v-container fluid>
+        <v-layout wrap fill-height>
+           <v-flex text-lg-left>
+            <v-img :src="productImg" aspect-ratio="1.5" :contain="imageContain"></v-img>
           </v-flex>
-          <v-flex>
-            <p>There are some things we can write asdfasdfasdfasdfasdfasdfasdfasdfasdf</p>
-             <Checkout></Checkout>
+        </v-layout>
+        <v-layout wrap justify-space-between text-lg-right>
+          <v-flex text-lg-right>
+            <v-flex>
+              <h1>Get your copy now</h1>
+            </v-flex>
+            <Checkout></Checkout>
           </v-flex>
           <!-- <v-flex> -->
             <!-- <GeneralInfo
@@ -31,7 +35,25 @@
       </v-container>
     </v-content>
     <v-footer color="primary" app>
-      <span class="white--text">&copy; {{currentYear}}</span>
+    <span class="white--text">&copy; {{currentYear }}</span><span class="white--text"> - </span><strong class="white--text"> London Publishing Press Ltd</strong>
+      <v-btn
+        flat
+        class="white--text"
+      >
+      Privacy Policy
+      </v-btn>
+       <v-btn
+        flat
+        class="white--text"
+      >
+      Disclaimer
+      </v-btn>
+      <v-btn
+        flat
+        class="white--text"
+      >
+      Terms & Conditions
+      </v-btn>
     </v-footer>
   </v-app>
 </template>
@@ -81,5 +103,6 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  background-color: #ebebed;
 }
 </style>

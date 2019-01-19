@@ -13,7 +13,7 @@
       @closed="closed"
       @canceled="canceled"
     ></vue-stripe-checkout>
-    <v-btn color="primary" @click="checkout">Checkout</v-btn>
+    <v-btn color="primary" @click="checkout">Get a Copy Now</v-btn>
   </div>
 </template>
 
