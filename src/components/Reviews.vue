@@ -1,6 +1,5 @@
 <template>
   <div id="reviews">
-      <h1>Reviews</h1>
       <v-flex>
         <slot></slot>
       </v-flex>

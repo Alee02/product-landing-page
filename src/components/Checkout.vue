@@ -13,7 +13,7 @@
       @closed="closed"
       @canceled="canceled"
     ></vue-stripe-checkout>
-    <v-btn color="primary" @click="checkout">Get a Copy Now</v-btn>
+    <v-btn :large="isLarge" color="primary" @click="checkout">Get a Copy Now</v-btn>
   </div>
 </template>
 
@@ -25,7 +25,8 @@ export default {
     name: "Lazzat-e-ghum",
     description: "By Misbah Shah",
     currency: "GBP",
-    amount: 299
+    amount: 299,
+    isLarge: true
   }),
   created() {
     // eslint-disable-next-line
