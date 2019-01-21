@@ -16,7 +16,7 @@
         <v-layout align-start justify-space-between column/>
         <v-layout wrap fill-height>
            <v-flex text-lg-left>
-            <v-img :src="productImg" aspect-ratio="1.5" :contain="imageContain"></v-img>
+            <v-img :src="productImg" aspect-ratio="3" :contain="imageContain"></v-img>
           </v-flex>
         </v-layout>
         <v-layout wrap justify-space-between text-lg-right>
