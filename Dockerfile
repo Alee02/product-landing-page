@@ -15,6 +15,3 @@ RUN rm -rf ./src
 ENV PORT=80
 EXPOSE 80
 CMD [ "npm", "start" ]
-//.dockerignore
-dist
-node_modules
