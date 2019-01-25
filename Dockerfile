@@ -1,6 +1,4 @@
-//Dockerfile
 FROM node:7.10.0
-MAINTAINER Artem Golovin <hey@artemgolovin.com>
 # use changes to package.json to force Docker not to use the cache
 # when we change our application's nodejs dependencies:
 ADD package.json /tmp/package.json
