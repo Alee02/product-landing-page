@@ -1,4 +1,4 @@
-FROM node:7.10.0
+FROM node:lts-alpine
 # use changes to package.json to force Docker not to use the cache
 # when we change our application's nodejs dependencies:
 ADD package.json /tmp/package.json
