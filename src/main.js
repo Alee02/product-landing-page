@@ -4,7 +4,9 @@ import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 import colors from 'vuetify/es5/util/colors'
 import VueStripeCheckout from 'vue-stripe-checkout';
-import Router from 'vue-router'
+import Router from 'vue-router';
+import router from './router';
+// import router from './router'
 
 // Vue.config.productionTip = false
 Vue.use(VueStripeCheckout, 'pk_live_NabI87Fil8TmdEMDXvVdnDy6');
@@ -18,6 +20,12 @@ Vue.use(Vuetify, {
   }
 })
 
+const DEFAULT_TITLE = 'Misbah Shah - Lazzat-e-ghum';
+router.afterEach((to, from) => {
+    document.title = DEFAULT_TITLE
+});
+
 new Vue({
+  router,
   render: h => h(App),
 }).$mount('#app')

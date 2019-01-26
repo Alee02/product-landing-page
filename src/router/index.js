@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import GeneralInfo from "@/components/GeneralInfo.vue";
-import App from "@/components/App.vue";
+import App from "@/App.vue";
 
 Vue.use(Router)
 
@@ -27,7 +27,7 @@ export default new Router({
       },
       {
         path: '/terms-and-conditions',
-        name: 'Termis & Conditions',
+        name: 'Terms & Conditions',
         component: GeneralInfo,
         props: {
             infoTitle: "Terms & Conditions",
@@ -36,13 +36,11 @@ export default new Router({
       },
       {
         path: '/',
-        name: 'App',
+        name: 'Product',
+        meta: {
+          title: 'Misbah Shah - Lazat-e-ghum',
+        },
         component: App
-      },
-      {
-        path: '/',
-        name: 'Privacy Policty',
-        component: GeneralInfo
       }
   ]
 })
